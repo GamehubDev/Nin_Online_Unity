@@ -1,0 +1,14 @@
+C:\Code\Toolset v4\Toolset\CrystalLib\bin\Debug\CrystalLib.dll
+C:\Code\Toolset v4\Toolset\CrystalLib\bin\Debug\CrystalLib.pdb
+C:\Code\Toolset v4\Toolset\CrystalLib\obj\Debug\CrystalLib.dll
+C:\Code\Toolset v4\Toolset\CrystalLib\obj\Debug\CrystalLib.pdb
+C:\Code\Toolset v4\Toolset\CrystalLib\obj\Debug\CrystalLib.csprojResolveAssemblyReference.cache
+C:\Code\Toolset v4\Toolset\CrystalLib\bin\Debug\sfmlnet-graphics-2.dll
+C:\Code\Toolset v4\Toolset\CrystalLib\bin\Debug\sfmlnet-window-2.dll
+C:\Users\Seth\Desktop\Toolset src\Toolset\CrystalLib\bin\Debug\CrystalLib.dll
+C:\Users\Seth\Desktop\Toolset src\Toolset\CrystalLib\bin\Debug\CrystalLib.pdb
+C:\Users\Seth\Desktop\Toolset src\Toolset\CrystalLib\bin\Debug\sfmlnet-graphics-2.dll
+C:\Users\Seth\Desktop\Toolset src\Toolset\CrystalLib\bin\Debug\sfmlnet-window-2.dll
+C:\Users\Seth\Desktop\Toolset src\Toolset\CrystalLib\obj\Debug\CrystalLib.csprojResolveAssemblyReference.cache
+C:\Users\Seth\Desktop\Toolset src\Toolset\CrystalLib\obj\Debug\CrystalLib.dll
+C:\Users\Seth\Desktop\Toolset src\Toolset\CrystalLib\obj\Debug\CrystalLib.pdb

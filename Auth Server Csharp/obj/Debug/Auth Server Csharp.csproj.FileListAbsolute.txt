@@ -1,0 +1,29 @@
+D:\Projekty\NinOnline\Auth Server Csharp\obj\Debug\Auth Server Csharp.csprojResolveAssemblyReference.cache
+D:\Projekty\NinOnline\Auth Server Csharp\obj\Debug\Auth_Server_Csharp.AuthServer.resources
+D:\Projekty\NinOnline\Auth Server Csharp\obj\Debug\AuthServer.Properties.Resources.resources
+D:\Projekty\NinOnline\Auth Server Csharp\obj\Debug\Auth Server Csharp.csproj.GenerateResource.Cache
+D:\Projekty\NinOnline\Auth Server Csharp\bin\Debug\Authentication Server - Nin Online.exe
+D:\Projekty\NinOnline\Auth Server Csharp\bin\Debug\Authentication Server - Nin Online.pdb
+D:\Projekty\NinOnline\Auth Server Csharp\obj\Debug\Authentication Server - Nin Online.exe
+D:\Projekty\NinOnline\Auth Server Csharp\obj\Debug\Authentication Server - Nin Online.pdb
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\obj\Debug\AuthServer.AuthenticationServer.resources
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\obj\Debug\AuthServer.DoubleClickTextBox.resources
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\obj\Debug\AuthServer.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\obj\Debug\Auth Server Csharp.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\bin\Debug\Authentication Server - Nin Online.exe
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\bin\Debug\Authentication Server - Nin Online.pdb
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\obj\Debug\Auth Server Csharp.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\obj\Debug\Authentication Server - Nin Online.exe
+C:\Users\Administrator\Documents\GitHub\nin-onlines-source\Auth Server Csharp\obj\Debug\Authentication Server - Nin Online.pdb
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\obj\Debug\Authentication Server - Nin Online.exe
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\obj\Debug\Authentication Server - Nin Online.pdb
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\bin\Debug\Authentication Server - Nin Online.exe
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\bin\Debug\Authentication Server - Nin Online.pdb
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\bin\Debug\MySql.Data.dll
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\obj\Debug\ResolveAssemblyReference.cache
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\obj\Debug\AuthServer.AuthenticationServer.resources
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\obj\Debug\AuthServer.DoubleClickTextBox.resources
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\obj\Debug\AuthServer.Properties.Resources.resources
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\obj\Debug\GenerateResource.read.1.tlog
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SmartGitHg\nin-onlines-source\Auth Server Csharp\obj\Debug\GenerateResource.write.1.tlog

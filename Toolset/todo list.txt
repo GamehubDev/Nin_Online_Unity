@@ -1,0 +1,29 @@
+Pressing ctrl on tileset selection should create a seperate selection area to select/deselect tiles, rather than clicking individual ones.
+
+If you rename a tileset for example, and try and load the resource, the resource manager doesn't realise the texture changed and doesn't re-load it. CRC32 Checksum?
+
+Layer opacity.
+
+History list refresh takes way too long.
+
+Deleting a tileset should purge tiles from all open maps. Same for terrain.
+
+Toolset Preferences
+
+Terrain
+-- Can't select terrain outside of the tileset area.
+-- Cliffs should be based off column height when caching.
+
+Santise object names so they don't fuck up windows files.
+
+MOVE TOOL
+-- Move entire layers
+-- Select & move area
+
+Only render maps in active tabs.
+
+CANT RECREATE: Right clicking layer visibility checkbox crashes -- only when compiled?
+
+CANT RECREATE: Various folders created in root directory sometimes?
+
+Tile sizes?? Set them to the project instead?

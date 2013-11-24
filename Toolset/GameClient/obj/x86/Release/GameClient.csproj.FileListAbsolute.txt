@@ -1,0 +1,13 @@
+C:\Code\Toolset v4\Toolset\GameClient\obj\x86\Release\GameClient.csprojResolveAssemblyReference.cache
+C:\Code\Toolset v4\Toolset\GameClient\obj\x86\Release\GameClient.Properties.Resources.resources
+C:\Code\Toolset v4\Toolset\GameClient\obj\x86\Release\GameClient.csproj.GenerateResource.Cache
+C:\Code\Toolset v4\Toolset\GameClient\bin\Release\GameClient.exe.config
+C:\Code\Toolset v4\Toolset\GameClient\bin\Release\GameClient.exe
+C:\Code\Toolset v4\Toolset\GameClient\bin\Release\GameClient.pdb
+C:\Code\Toolset v4\Toolset\GameClient\bin\Release\CrystalLib.dll
+C:\Code\Toolset v4\Toolset\GameClient\bin\Release\sfmlnet-audio-2.dll
+C:\Code\Toolset v4\Toolset\GameClient\bin\Release\sfmlnet-graphics-2.dll
+C:\Code\Toolset v4\Toolset\GameClient\bin\Release\sfmlnet-window-2.dll
+C:\Code\Toolset v4\Toolset\GameClient\bin\Release\CrystalLib.pdb
+C:\Code\Toolset v4\Toolset\GameClient\obj\x86\Release\GameClient.exe
+C:\Code\Toolset v4\Toolset\GameClient\obj\x86\Release\GameClient.pdb

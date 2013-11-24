@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A33D4ABB-D25C-4C3D-9857-4A342C463317}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Toolset</RootNamespace>
+    <AssemblyName>Toolset</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cog.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="sfmlnet-audio-2, Version=2.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\sfmlnet-audio-2.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-graphics-2, Version=2.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\sfmlnet-graphics-2.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-window-2, Version=2.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\sfmlnet-window-2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Anchor\AnchorSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Anchor\AnchorSelection.Designer.cs">
+      <DependentUpon>AnchorSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Console\ListViewStreamWriter.cs" />
+    <Compile Include="Controls\CustomComboBox\CustomComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomComboBox\OldNewEvent.cs" />
+    <Compile Include="Controls\CustomComboBox\PopupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DoubleBuffer\DblTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DoubleBuffer\NativeInterop.cs" />
+    <Compile Include="Controls\FixedListView\FixedListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollSelect.Designer.cs">
+      <DependentUpon>ScrollSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollBlank.designer.cs">
+      <DependentUpon>ScrollBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollMap.Designer.cs">
+      <DependentUpon>ScrollMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollSFML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollSFML.Designer.cs">
+      <DependentUpon>ScrollSFML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollTexture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollTexture.Designer.cs">
+      <DependentUpon>ScrollTexture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollTileset.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Scroll\ScrollTileset.Designer.cs">
+      <DependentUpon>ScrollTileset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Sorting\TerrainSorter.cs" />
+    <Compile Include="Controls\Sorting\ListViewSorter.cs" />
+    <Compile Include="Controls\Sorting\NaturalComparer.cs" />
+    <Compile Include="Controls\Sorting\TreeNodeSorter.cs" />
+    <Compile Include="Dialogs\DialogClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogClose.Designer.cs">
+      <DependentUpon>DialogClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogAbout.Designer.cs">
+      <DependentUpon>DialogAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogLayer.Designer.cs">
+      <DependentUpon>DialogLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogMap.Designer.cs">
+      <DependentUpon>DialogMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogMapSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogMapSize.Designer.cs">
+      <DependentUpon>DialogMapSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogPreferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogPreferences.Designer.cs">
+      <DependentUpon>DialogPreferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogProject.Designer.cs">
+      <DependentUpon>DialogProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogRename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogRename.Designer.cs">
+      <DependentUpon>DialogRename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogTerrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogTerrain.Designer.cs">
+      <DependentUpon>DialogTerrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogTileset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogTileset.Designer.cs">
+      <DependentUpon>DialogTileset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\DockConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockConsole.Designer.cs">
+      <DependentUpon>DockConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\DockHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockHistory.Designer.cs">
+      <DependentUpon>DockHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\DockLayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockLayers.Designer.cs">
+      <DependentUpon>DockLayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\DockMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockMap.Designer.cs">
+      <DependentUpon>DockMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\DockProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockProject.Designer.cs">
+      <DependentUpon>DockProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\DockTerrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockTerrain.Designer.cs">
+      <DependentUpon>DockTerrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\DockTileset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockTileset.Designer.cs">
+      <DependentUpon>DockTileset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\ToolWindow.Designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\AnchorPoints.cs" />
+    <Compile Include="EventArgs\Map\UnsavedChangesEventArgs.cs" />
+    <Compile Include="EventArgs\Map\ToolSelectedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\Layer\LayerOrderChangedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\Layer\LayerSelectedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\Layer\LayerDeletedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\Layer\LayerChangedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\Layer\LayerAddedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\MapSelectedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\MapDeletedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\MapChangedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\MapLoadedEventArgs.cs" />
+    <Compile Include="EventArgs\Map\MapAddedEventArgs.cs" />
+    <Compile Include="EventArgs\Project\SettingsLoadedEventArgs.cs" />
+    <Compile Include="EventArgs\Project\ProjectChangedEventArgs.cs" />
+    <Compile Include="EventArgs\Project\ProjectClosedEventArgs.cs" />
+    <Compile Include="EventArgs\Project\ProjectLoadedEventArgs.cs" />
+    <Compile Include="EventArgs\Terrain\TerrainLoadedEventArgs.cs" />
+    <Compile Include="EventArgs\Terrain\TerrainAddedEventArgs.cs" />
+    <Compile Include="EventArgs\Terrain\TerrainDeletedEventArgs.cs" />
+    <Compile Include="EventArgs\Terrain\TerrainChangedEventArgs.cs" />
+    <Compile Include="EventArgs\Terrain\TerrainSelectedEventArgs.cs" />
+    <Compile Include="EventArgs\Tileset\SelectionChangedEventArgs.cs" />
+    <Compile Include="EventArgs\Tileset\TilesetAddedEventArgs.cs" />
+    <Compile Include="EventArgs\Tileset\TilesetChangedEventArgs.cs" />
+    <Compile Include="EventArgs\Tileset\TilesetDeletedEventArgs.cs" />
+    <Compile Include="EventArgs\Tileset\TilesetLoadedEventArgs.cs" />
+    <Compile Include="EventArgs\Tileset\TilesetSelectedEventArgs.cs" />
+    <Compile Include="Icons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\ProjectManager.cs" />
+    <Compile Include="Managers\MapManager.cs" />
+    <Compile Include="Managers\TerrainManager.cs" />
+    <Compile Include="Managers\TilesetManager.cs" />
+    <Compile Include="Managers\ToolsetManager.cs" />
+    <Compile Include="Preferences\ToolsetPreferences.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TileEngine\EditorTileMap.cs" />
+    <Compile Include="TileEngine\EditorTile.cs" />
+    <Compile Include="TileEngine\EditorTileLayer.cs" />
+    <Compile Include="TileEngine\EditorTools.cs" />
+    <Compile Include="TileEngine\TerrainCache.cs" />
+    <EmbeddedResource Include="Controls\Anchor\AnchorSelection.resx">
+      <DependentUpon>AnchorSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Scroll\ScrollSelect.resx">
+      <DependentUpon>ScrollSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Scroll\ScrollBlank.resx">
+      <DependentUpon>ScrollBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Scroll\ScrollSFML.resx">
+      <DependentUpon>ScrollSFML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Scroll\ScrollTexture.resx">
+      <DependentUpon>ScrollTexture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Scroll\ScrollTileset.resx">
+      <DependentUpon>ScrollTileset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogClose.resx">
+      <DependentUpon>DialogClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogAbout.resx">
+      <DependentUpon>DialogAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogLayer.resx">
+      <DependentUpon>DialogLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogMap.resx">
+      <DependentUpon>DialogMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogMapSize.resx">
+      <DependentUpon>DialogMapSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogPreferences.resx">
+      <DependentUpon>DialogPreferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogProject.resx">
+      <DependentUpon>DialogProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogRename.resx">
+      <DependentUpon>DialogRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogTerrain.resx">
+      <DependentUpon>DialogTerrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DialogTileset.resx">
+      <DependentUpon>DialogTileset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\DockConsole.resx">
+      <DependentUpon>DockConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\DockHistory.resx">
+      <DependentUpon>DockHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\DockLayers.resx">
+      <DependentUpon>DockLayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\DockMap.resx">
+      <DependentUpon>DockMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\DockProject.resx">
+      <DependentUpon>DockProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\DockTerrain.resx">
+      <DependentUpon>DockTerrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\DockTileset.resx">
+      <DependentUpon>DockTileset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ToolWindow.resx">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CrystalLib.Toolset\CrystalLib.Toolset.csproj">
+      <Project>{D9EE3C7B-6954-4AD4-9E89-B5F7F09C3170}</Project>
+      <Name>CrystalLib.Toolset</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CrystalLib\CrystalLib.csproj">
+      <Project>{CE24EBE1-16B1-479E-87CF-5223D6CA07A7}</Project>
+      <Name>CrystalLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameClient\GameClient.csproj">
+      <Project>{E4CE1F93-D2AA-43AE-B7BA-A2CDC862D9B2}</Project>
+      <Name>GameClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\size.png" />
+    <None Include="Resources\position.png" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\wand.png" />
+    <None Include="Resources\texture_add.png" />
+    <None Include="Resources\texture.png" />
+    <None Include="Resources\textfield_rename.png" />
+    <None Include="Resources\Textbox.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\star.png" />
+    <None Include="Resources\sound.png" />
+    <None Include="Resources\shape_square.png" />
+    <None Include="Resources\shape_move_front.png" />
+    <None Include="Resources\shape_move_backwards.png" />
+    <None Include="Resources\shape_handles.png" />
+    <None Include="Resources\shading.png" />
+    <None Include="Resources\script_code.png" />
+    <None Include="Resources\script.png" />
+    <None Include="Resources\picture_delete.png" />
+    <None Include="Resources\Picture.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\paste_plain.png" />
+    <None Include="Resources\palette.png" />
+    <None Include="Resources\paintcan.png" />
+    <None Include="Resources\paintbrush.png" />
+    <None Include="Resources\page_white_text.png" />
+    <None Include="Resources\page_white_csharp.png" />
+    <None Include="Resources\page_white.png" />
+    <None Include="Resources\page_copy.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\music.png" />
+    <None Include="Resources\map_edit.png" />
+    <None Include="Resources\map_add.png" />
+    <None Include="Resources\map.png" />
+    <None Include="Resources\lock_open.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\Listbox.png" />
+    <None Include="Resources\Label.png" />
+    <None Include="Resources\injection-icon.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\grid-icon.png" />
+    <None Include="Resources\font.png" />
+    <None Include="Resources\folder_picture.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\film.png" />
+    <None Include="Resources\eye2_disable.png" />
+    <None Include="Resources\eye2.png" />
+    <None Include="Resources\eye_disable.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\eraser.png" />
+    <None Include="Resources\door_out.png" />
+    <None Include="Resources\disk_multiple.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\controller.png" />
+    <None Include="Resources\Combobox.png" />
+    <None Include="Resources\color_wheel.png" />
+    <None Include="Resources\cog.png" />
+    <None Include="Resources\CheckListbox.png" />
+    <None Include="Resources\Checkbox.png" />
+    <None Include="Resources\Button.png" />
+    <None Include="Resources\bullet_up.png" />
+    <None Include="Resources\bullet_go.png" />
+    <None Include="Resources\bullet_down.png" />
+    <None Include="Resources\bricks.png" />
+    <None Include="Resources\brick_edit.png" />
+    <None Include="Resources\brick.png" />
+    <None Include="Resources\bin_empty.png" />
+    <None Include="Resources\arrow_undo.png" />
+    <None Include="Resources\arrow_redo.png" />
+    <None Include="Resources\application_view_list.png" />
+    <None Include="Resources\application_view_icons.png" />
+    <None Include="Resources\application_form_magnify.png" />
+    <None Include="Resources\application_form_edit.png" />
+    <None Include="Resources\application_edit.png" />
+    <None Include="Resources\application.png" />
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cog.ico" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\arr_upright.png" />
+    <None Include="Resources\arr_upleft.png" />
+    <None Include="Resources\arr_up.png" />
+    <None Include="Resources\arr_right.png" />
+    <None Include="Resources\arr_left.png" />
+    <None Include="Resources\arr_downright.png" />
+    <None Include="Resources\arr_downleft.png" />
+    <None Include="Resources\arr_down.png" />
+    <None Include="Resources\play1.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\plugin.png" />
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

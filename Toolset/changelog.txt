@@ -1,0 +1,366 @@
+v2.1.4:
+
+• When opening a project you now select the Project.xml file rather than the folder.
+• Deleting tilesets will now clear all related tiles from all maps.
+• Deleting terrain will now clear all related tiles from all maps.
+• Added a project closing dialogue which lists all files with unsaved changes rather than showing a dialogue for each individual one.
+• 
+
+v2.1.3:
+
+• Map eraser & terrain highlight no longer renders when outside map area.
+• Added right-click context menu to tabs.
+• Added Save, Close & Open Containing Folder menu items to the tab context menu.
+• Can now close a single file through the File menu.
+• File -> Save now shows what will be saved.
+• Added Save All menu item.
+
+v2.1.2:
+
+• Terrain icon generation is now threaded to improve project loading.
+• Terrain icons no longer crash the program if you close the project whilst icons are being generated.
+• Terrain icons are now cached in the /terrain/ folder to improving loading speeds.
+• Terrain icons are now forcibly re-generated when the terrain is modified in any way.
+• Tileset dockpanel is now properly disabled when the project is closed.
+
+v2.1.1:
+
+• Moved terrain icon creation to a background worker to decrease project load time.
+• Changed how tileset list is generated in the terrain dialog. It now doesn't derp out if you add a new tileset, and all the textures match the items properly.
+• Terrain dialog no longer crashes if you don't have any tilesets.
+
+v2.1.0:
+
+• Reversed the list of layers to more naturally show how the map is built.
+
+v2.0.19:
+
+• Can now seamlessly undo & redo map size changes.
+• Can now select an anchor point when re-sizing the map to declare which direction the map should resize in.
+• Moved tile array resizing to the ResizeMap() method.
+• Can now undo a command which resized both width & height.
+
+v2.0.18:
+
+• When Project Explorer nodes are restored, the currently selected node is forced in to view.
+• Added a 'Edit Map Size' dialog.
+• Created anchor point selection control.
+• Added map-specific menu which is attached to the main form through MDI.
+• Added map name to the map menu.
+• Anchor point selection control is now size sensitive.
+
+v2.0.17:
+
+• Added 'Play' button.
+• Added game client.
+• Play button now loads a game client in to the toolset.
+• Game client now run on its own thread.
+• Split TerrainCache.cs. TerrainCache remains in the Toolset project and handles all SFML caching. TerrainHelper.cs was created in CrystalLib.TileEngine and handles all point calculations.
+
+v2.0.16:
+
+• Added natural list sorting to Project Explorer.
+• Added natural list sorting to Terrain.
+• Checks to see if maps/tilesets etc. already exist are now case insensitive.
+• Lowered padding on terrain list.
+• Added EnsureVisible() method to scrollSelect. This will ensure the user can see the tileset selection when editing or duplicating terrain tiles.
+• Name check on renaming/editing objects is now case insensitive. (No longer tells you off if you change the casing without changing the actual text).
+• Selecting terrain in the project explorer will now switch to the terrain brush tool and also switch the currently selected terrain to the one... selected.
+• If name not set in the New Tileset dialog, it'll be generated from the file name of the texture imported.
+
+v2.0.15:
+
+• Replaced History & Terrain icons.
+• Fixed portability of tileset textures.
+• Terrain added to the Project Explorer.
+
+v2.0.14:
+
+• Entire map will now cache when reverted to its concrete form.
+• Removed extra calls to CacheAllTiles().
+• Split Terrain caching between map-wide caching and per-tile caching.
+• Per-tile caching (terrain or normal) will re-cache the terrain of the surrounding 8 tiles.
+• Seperated the TerrainCache methods for type-specific settings.
+• Fill tool now recognises terrain matches.
+• UnsavedChanges flag now set on property change. Undo/Redo will now trigger it.
+
+v2.0.13:
+
+• Added proper terrain rendering through TerrainCache.cs.
+• Fixed rendering.
+
+v2.0.12:
+
+• Terrain now loads & saves.
+• Terrain will now create a tile-sized icon showing a preview of how the terrain looks for the lstTerrain control.
+• Terrain can now be created.
+• Terrain can now be edited.
+• Terrain can now be renamed.
+• Terrain can now be deleted.
+• Updated lstTerrain control with the custom control FixedListView.
+• lstTerrain now has a right-click context menu.
+• Generated icons are now deleted when a terrain tile is deleted or changed.
+• Terrain can now be duplicated.
+• Terrain selection now tries to stay pretty constant.
+• Hooked up all the TerrainManager events to the DockTerrain UI.
+
+v2.0.11:
+
+• Clicking in the middle of a brush action no longer breaks the undoredo class.
+• Saving now only saves the open file, and only if unsaved changes are present.
+• Added a Console dock panel.
+• Added ListViewStreamWriter.cs.
+• Re-directed console output to the listview on DockConsole.cs.
+• Fixed newline problem with console.
+• Console now ensures the latest addition to the log is visible.
+• Added Delete button to the console.
+• Closing a map with no unsaved changes will no correctly clear the history.
+• Added terrain panel.
+• Added terrain brush tool.
+• Added terrain dialog.
+• Built up terrain manager.
+• Can now create new terrain objects.
+• Hooked the DockTerrain functions up to the TerrainManager events.
+• TerrainAdded event now properly firing when new terrain is created.
+• New terrain is now added to the lstTerrain control.
+• Tile selection in the terrain editor now works.
+
+v2.0.10:
+
+• Added EditorTileMap Clone method to fix MapChanged event.
+• EditorTileMap now keeps a cache of the last saved state.
+• If you close a map when changes were made it'll now correctly allow you to either cancel closing, save your changes, or revert back to the last saved  state.
+• All dockpanel content checks now type-cast as DockMap. TabText is no longer used to identify documents.
+• Maps with unsaved changes now show a * next to their name in the TabText.
+• Renaming a map no longer forces it to save.
+• Renaming a map will no only rename the file.
+• Choosing to not save changes will still save the XML after reverting to the concrete map data.
+• Closing a map will now clear the undo/redo history.
+• Cancelling the save operation of anything when closing the entire application will now stop the application from closing.
+• DockMap will now only prompt to save the map when the document is closed by a user specifically (fixes double prompts when closing application).
+• Maps now correctly commit changes made to ConcreteLayers when saving manually.
+• UnsavedChanges no longer set to true when setting tiles down fails.
+• Fill tool now correctly triggers the UnsavedChanges bool.
+
+v2.0.9:
+
+• Added a 'Changed' event to the UndoRedo class.
+• Hooked in to each individual Changed event on EditorTile and EditorLayer.
+• Map now intelligently re-renders specific areas based on what was changed in the undo/redo command.
+
+v2.0.8:
+
+• Brush and eraser tools now handle all changes done in a single mouse action as a single undo/redo command.
+• Fixed bug with eraser tool not being able to be 'redone'.
+• Replaced ICloneable inheritence due to no deep cloning of undoredo properties.
+• Fixed layer duplication.
+• Can now undo/redo all layer operations.
+• Layer list now updates on undo/redo changes.
+
+v2.0.7:
+
+• Added Camera intrect to the ScrollableSFML control.
+• Camera now passed as a parameter to the RenderMap method.
+• Map no longer renders areas outside of the Camera area.
+• Enabled fill tool.
+• When hovering over a tile with the fill tool, it'll highlight the area which will be replaced if the fill tool is actually used.
+• Fill tool now fills tile areas when used.
+• Fill highlight no longer highlights tiles outside of the camera view.
+• Fixed bug with flood fill algorithm checking tiles twice.
+• Fixed bug where empty tiles were getting serialized.
+• Optimised map camera. Now ONLY checks tiles within camera view.
+• Re-programmed entire EditorMap system to support undo/redo.
+• Added EditorTile and EditorTileLayer.
+• Added DockHistory panel.
+• History now keeps track of all undo/redo events.
+• Added undo/redo buttons.
+• Fixed bug where you couldn't undo/redo Tile Brush events.
+• Undo/Redo menu on MainForm now hook directory in to DockHistory.
+
+v2.0.6:
+
+• Can no longer drag selection off-screen in the tileset panel.
+• Tile selection now stops on mouseup.
+• Removed a lot of the padding from the document tabs.
+• Moved some menu items around.
+• Can now edit multiple maps at once.
+• Can now set and remove tiles from the map.
+• Can no longer set and remove tiles from outside the map's bounds.
+• Added a map renderer.
+• Hooked the map renderer in to the various events, making sure it automatically re-renders when any changes are made.
+• Map saving/loading now automatically converts the enumerable tile list to and from a 2D array for faster processing in-memory.
+• Maps now have a cached 2D sprite array which is automatically updated whenever tiles are placed.
+• Fixed inconsistencies with the various 'deleted' events.
+• Added brush + eraser tools.
+• Eraser tool now shows a highlight over affected tile position.
+
+v2.0.5:
+
+• Implemented EditorMap class.
+• Added Layers panel.
+• Added map-specific events.
+• Hooked layers panel in to all the map events.
+• Added layer adding, renaming and moving.
+• Added 'unsaved changes' property to maps.
+• Maps will now show a save prompt when closing.
+• Can now edit multiple maps at once (tiled or floating).
+• Added layer visibility and opacity.
+• Created custom ListView control for better functionality.
+• Can now duplicate layers.
+• Duplicated layers are inserted below the layer duplicated from.
+• Duplicating a layer brings up a prompt allowing you to edit the details.
+
+v2.0.4:
+
+• Tile selection now renders on the map control.
+• Now renders all tiles, toggled individually or not.
+• Tile selection now calculates the offset from the 0, 0 on the tileset.
+• Individual tiles no longer render outside the map area.
+• Map control now recognises map size changes.
+• App now restores maps opened last session.
+• Persistent Project Explorer nodes no longer get confused when switching between projects.
+• Toggling individual tiles in the selection now calculates the offset properly.
+• Map tabs now automatically close when a map is deleted.
+• Added tile layers to maps.
+
+v2.0.3:
+
+• Re-implemented resource manager and replaced all texture calls.
+• Can no longer toggle tile selection outside of the tileset region.
+• Pulled in the Edit, Database and Tools menus. Disable till implemented.
+• Project explorer now retains node selection intelligently.
+• Added maps.
+• Implemented MapManager class.
+• Added dockable map editor form.
+• Can now open, rename, edit and delete maps.
+• Editing a map's properties will now update the map's tab.
+• Added inherited menu to the DockMap form.
+
+v2.0.2:
+
+• Re-implemented tile selection.
+• Can now drag up and left.
+• Tile selection now stored as a list of points.
+• Can now toggle individual points by using ctrl.
+• Can no longer select tiles which don't exist.
+• Bug with tileset selection and area fixed.
+• Cleaned up the PointSelection class.
+• Replaced direct manager calls with multiple events.
+
+v2.0.1:
+
+• Re-factored singleton classes in to a collection of manager classes.
+• Rather than monolothic call stacks, now uses centralised events.
+• Replaced copied & pasted code with centralised, inheritable classes.
+• Built new dialogs which can be switched to 'edit mode'.
+• Moved dialog and docking librarys to new CrystalLib.Toolset.
+• Moved object management to Toolset project.
+• Standardised the 'project' concept.
+• UI uses event handlers to update itself automatically.
+• Re-implemented tilesets.
+• Re-designed Project Explorer panel.
+
+v2.0.0:
+
+• Re-created solution from scratch.
+
+v1.0.9:
+
+• Can no longer try and rename or delete tilesets which don't exist.
+• Can now edit tilesets.
+• Replacing tileset textures now properly rebuilds maps.
+• Fixed crash when clicking both mouse buttons at once.
+
+v1.0.8:
+
+• Added terrain (previously known as autotiles).
+• Refactored old new item dialogs to generic edit & new.
+• Can now edit game properties.
+• Added terrain dock panel.
+• Can now edit map properties.
+• Fixed map re-sizing.
+• History list now only refreshes when items are added/removed.
+
+v1.0.7:
+
+• Changing opacity is now merged in to a single undo/redo command.
+• Changing opacity no longer re-caches the entire layer.
+
+v1.0.6:
+
+• Fill tool now recognises single tile areas.
+• Creating a new layer now adds blank tiles properly.
+• Eraser highlight now disappears properly.
+• Added eyedropper tool.
+
+v1.0.5:
+
+• Replaced EditableTileMap tile lists with a 2D array.
+• Optimised fill function to run off new 2D array.
+• Re-implemented cached fill highlights.
+• Re-implemented SetAffected() for tile-specific caching.
+• Fill function now calls individual tile caching.
+• Loading/Saving maps now converts tile lists in to 2D array.
+• Undo/redo stacks are now document specific.
+• Added changes to the map's layer structure to the undo/redo stack.
+• Fixed rendering on undo/redo.
+• Fixed layers not being selected when using undo/redo.
+• Fixed new map functionality.
+
+v1.0.4:
+
+• Creating a new layer will now select that layer.
+• Project Explorer treeview node states are now saved between sessions.
+• Fixed icons not displaying.
+• Added undo/redo and history.
+• Replaced direct calls to the CrystalLib map array with an EditableTileMap wrapper.
+• Loading/saving maps will now automatically convert EditableTileMaps to TileMaps.
+• Added icons + proper step highlighting to the history list.
+• Added eraser tool to history.
+• Right-clicking with the tile brush tool will now show up as eraser action.
+• Clearing history will now update UI.
+• Making a new map will now clear the history to avoid a bug.
+
+v1.0.3:
+
+• Optimised fill function to create more intelligent enumerations.
+• Real-time fill highlights no longer highlight when not hovering over stuff.
+• Added File -> Export menu item. Can export maps as .png, .bmp, .jpg or .tga.
+• Implemented new layer list system.
+• Added eye icons to the layer list.
+• Added null checks to various EditorManager.cs methods.
+• Fixed various docking issues.
+• Added 'properties' panel.
+• Replaced map list with project explorer.
+• Added context menu to the map layers control.
+• Added context menu to the project explorer control.
+• Multi-tile placement will now only re-cache the layer once.
+• Added history control.
+
+v1.0.2:
+
+• Added map sprite caching.
+• Added per-layer sprite arrays.
+• Optimised rendering methods.
+• Optimised flood fill methods.
+• Re-factored most of the code to better incorporate LINQ + lambda.
+• Fixed some readability and flow issues.
+• Standardised control colours across the application.
+• Added highlight overlay for fill tool.
+• Fixed layer opacity and tile placement to work with map caching.
+• New layer list control.
+
+v1.0.1:
+
+• Fixed fill tool.
+• Re-programmed tileset & map rendering for better performance.
+• Added flood fill support for both existing tiles and null regions.
+• Added eraser & fill tools.
+• Can now delete and rename maps and tilesets.
+• Added zoom to tileset view -- disabled it because it looks terrible.
+• Added grid & selection toggle to tileset view.
+• Fixed flickering on render on map & tileset views.
+
+v1.0.0:
+
+• Created program.

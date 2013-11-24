@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TileMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>1</ID>
+  <Name>Test</Name>
+  <Width>19</Width>
+  <Height>14</Height>
+  <TileWidth>32</TileWidth>
+  <TileHeight>32</TileHeight>
+  <Layers>
+    <TileLayer>
+      <Name>Default</Name>
+      <Opacity>100</Opacity>
+      <Visible>true</Visible>
+      <Tiles />
+    </TileLayer>
+  </Layers>
+</TileMap>

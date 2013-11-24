@@ -1,0 +1,20 @@
+D:\Projekty\NinOnline\Auth Server Csharp\bin\x86\Debug\Authentication Server - Nin Online.exe
+D:\Projekty\NinOnline\Auth Server Csharp\bin\x86\Debug\Authentication Server - Nin Online.pdb
+D:\Projekty\NinOnline\Auth Server Csharp\obj\x86\Debug\AuthServer.Properties.Resources.resources
+D:\Projekty\NinOnline\Auth Server Csharp\obj\x86\Debug\Auth Server Csharp.csproj.GenerateResource.Cache
+D:\Projekty\NinOnline\Auth Server Csharp\obj\x86\Debug\Authentication Server - Nin Online.exe
+D:\Projekty\NinOnline\Auth Server Csharp\obj\x86\Debug\Authentication Server - Nin Online.pdb
+D:\Projekty\NinOnline\Auth Server Csharp\obj\x86\Debug\Auth Server Csharp.csprojResolveAssemblyReference.cache
+D:\Projekty\NinOnline\Auth Server Csharp\bin\x86\Debug\MySql.Data.dll
+D:\Projekty\NinOnline\Auth Server Csharp\obj\x86\Debug\AuthServer.DoubleClickTextBox.resources
+D:\Projekty\NinOnline\Auth Server Csharp\obj\x86\Debug\AuthServer.AuthenticationServer.resources
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\bin\x86\Debug\Authentication Server - Nin Online.exe
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\bin\x86\Debug\Authentication Server - Nin Online.pdb
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\bin\x86\Debug\MySql.Data.dll
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\obj\x86\Debug\AuthServer.AuthenticationServer.resources
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\obj\x86\Debug\AuthServer.DoubleClickTextBox.resources
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\obj\x86\Debug\AuthServer.Properties.Resources.resources
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\obj\x86\Debug\Auth Server Csharp.csproj.GenerateResource.Cache
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\obj\x86\Debug\Authentication Server - Nin Online.exe
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\obj\x86\Debug\Authentication Server - Nin Online.pdb
+D:\Projekty\NinOnline\BitBucket\Auth Server Csharp\obj\x86\Debug\Auth Server Csharp.csprojResolveAssemblyReference.cache
